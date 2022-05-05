@@ -9,9 +9,11 @@ public class Main {
 		File folderIn = new File("E:\\Java OOP actual\\CopyFolder");
 		File folderOut = new File("E:\\Java OOP actual\\CopyFolder1");		
 		
-		// we copy all .pdf files
+		
+		String currentExtecsion = ".pdf"; // we copy all .pdf files
+		
 		try {
-			FileCopy.copyFilesPDF(folderIn, folderOut);
+			FileCopy.copyFilesPDF(folderIn, folderOut, currentExtecsion);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
